@@ -42,6 +42,10 @@
   </div>
 </template>
 <script setup>
+
+useHead({
+  titleTemplate: (title) => title ? `${title} | Alameen` : 'Alameen Dashboard',
+});
 const route = useRoute();
 const sidebar = ref(null);
 const sidebarIsOpen = ref(true);

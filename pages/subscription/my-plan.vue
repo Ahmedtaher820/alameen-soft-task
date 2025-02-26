@@ -153,6 +153,10 @@
   </div>
 </template>
 <script setup>
+
+useHead({
+  title: `My Plan`,
+})
 const daysAvaliable = ref(6);
 const subscriptionStatus = ref("Pending");
 const planStatus = computed(() => {
